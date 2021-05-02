@@ -9,7 +9,7 @@ Given a list of products (or SKU's - Stock-keeping units), the service will calc
 | POST   | /checkout | Given a list of SKU's, calculate the total of the checkout applying discounts |
 
 **Request example**:
-`curl -X POST http://localhost:8080/checkout --data '["001", "002", "003"]'`
+`curl -X POST http://localhost:8080/checkout -H "Content-Type: application/json" --data '["001", "002", "003"]'`
 
 **Response example**:
 ```json
