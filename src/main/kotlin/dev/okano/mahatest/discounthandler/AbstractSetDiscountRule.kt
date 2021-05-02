@@ -4,7 +4,7 @@ import dev.okano.mahatest.model.Checkout
 import dev.okano.mahatest.model.Sku
 import org.slf4j.LoggerFactory
 
-abstract class AbstractSetDiscount : Discount {
+abstract class AbstractSetDiscountRule : DiscountRule {
 
     private val log = LoggerFactory.getLogger(javaClass)
 

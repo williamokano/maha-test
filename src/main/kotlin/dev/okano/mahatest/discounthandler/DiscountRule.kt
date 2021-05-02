@@ -2,6 +2,6 @@ package dev.okano.mahatest.discounthandler
 
 import dev.okano.mahatest.model.Checkout
 
-interface Discount {
+interface DiscountRule {
     fun getDiscount(checkout: Checkout): Long
 }

@@ -4,7 +4,7 @@ import dev.okano.mahatest.model.Sku
 import org.springframework.stereotype.Component
 
 @Component
-class MichaelKorsDiscount : AbstractSetDiscount() {
+class MichaelKorsDiscountRule : AbstractSetDiscountRule() {
     override fun itemSku(): Sku = Sku.of("002")
 
     override fun discountThreshold(): Int = 2

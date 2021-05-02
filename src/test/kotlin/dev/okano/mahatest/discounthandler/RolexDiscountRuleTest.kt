@@ -10,9 +10,9 @@ import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
 import java.util.stream.Stream
 
-class RolexDiscountTest {
+class RolexDiscountRuleTest {
 
-    private val underTest = RolexDiscount()
+    private val underTest = RolexDiscountRule()
 
     @DisplayName("should calculate rolex discount for quantity {1}")
     @ParameterizedTest
