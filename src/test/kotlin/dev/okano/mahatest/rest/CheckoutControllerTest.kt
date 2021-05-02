@@ -45,7 +45,7 @@ class CheckoutControllerTest {
                 .contentType("application/json")
                 .content(objectMapper.writeValueAsBytes(listOf("001", "002", "003")))
         )
-            .andExpect(status().isOk)
+            .andExpect(status().isCreated)
             .andExpect(jsonPath("$.price").value(10L))
 
         verify(checkoutService).getTotal(TEST_CASE_SKUS)

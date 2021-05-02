@@ -37,7 +37,7 @@ class CheckoutControllerIntegrationTest {
                 .contentType("application/json")
                 .content(objectMapper.writeValueAsString(productList))
         )
-            .andExpect(status().isOk)
+            .andExpect(status().isCreated)
             .andExpect(jsonPath("$.price").value(expectedPrice))
     }
 
