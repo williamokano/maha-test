@@ -18,7 +18,7 @@ class RolexDiscountTest {
     @ParameterizedTest
     @MethodSource("argumentsProvider")
     fun `should calculate rolex discount`(quantity: Int, expectedDiscount: Long) {
-        val checkoutItem = Checkout.Item(Product(Sku.of("001"), "Rolex", 100), quantity)
+        val checkoutItem = Checkout.Item(ROLEX, quantity)
         val checkout = Checkout(items = setOf(checkoutItem))
         val response = underTest.getDiscount(checkout)
 
