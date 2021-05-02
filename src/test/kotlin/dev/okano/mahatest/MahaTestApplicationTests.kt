@@ -9,5 +9,4 @@ class MahaTestApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }

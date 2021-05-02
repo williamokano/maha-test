@@ -18,7 +18,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
-
 @ExtendWith(SpringExtension::class)
 @WebMvcTest(controllers = [CheckoutController::class])
 class CheckoutControllerTest {

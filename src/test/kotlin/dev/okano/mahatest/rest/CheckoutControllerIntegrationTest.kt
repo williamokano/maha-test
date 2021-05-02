@@ -16,7 +16,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPat
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import java.util.stream.Stream
 
-
 @ExtendWith(SpringExtension::class)
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -24,7 +23,6 @@ class CheckoutControllerIntegrationTest {
 
     @Autowired
     private lateinit var mockMvc: MockMvc
-
 
     @Autowired
     private lateinit var objectMapper: ObjectMapper

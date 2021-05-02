@@ -1,6 +1,6 @@
 package dev.okano.mahatest.model
 
-import java.util.*
+import java.util.UUID
 
 data class Checkout(val id: UUID = UUID.randomUUID(), val items: Set<Item>) {
     companion object {
